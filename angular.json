@@ -29,7 +29,9 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "./src/assets/icons",
+              "./src/assets/images"
             ],
             "styles": [
               "src/styles.scss"
@@ -88,7 +90,9 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "./src/assets/icons",
+              "./src/assets/images"
             ],
             "styles": [
               "src/styles.scss"
