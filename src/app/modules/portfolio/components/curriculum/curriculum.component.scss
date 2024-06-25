@@ -1,0 +1,109 @@
+.curriculumContainer {
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 0.5rem;
+            color: #FAFAFA;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #FAFAFA;
+        }
+
+        .cvButton {
+            width: 200px;
+            padding: 20px;
+
+            border: none;
+            border-radius: 8px;
+
+            background: linear-gradient(#020024, #200838, #502677);
+            color: #FAFAFA;
+
+            font-size: 1rem;
+
+            transition: width 0.4s ease 0s;
+        }
+
+        .cvButton:hover {
+            width: 100%;
+        }
+    }
+
+    .bg {
+        z-index: 1;
+        position: relative;
+        margin-top: -300px;
+        margin-left: 550px;
+        img {
+            filter: opacity(15%), ;
+            max-width: 500px;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+
+    .curriculumContainer {
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+    
+            h2 {
+                font-size: 2.0rem;
+                font-weight: 700;
+                color: #FAFAFA;
+            }
+    
+            p {
+                font-size: 1.25rem;
+                color: #FAFAFA;
+            }
+    
+            .cvButton {
+                width: 100%;
+                transition: width 0.4s ease 0s;
+            }
+        }
+    
+        .bg {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .curriculumContainer {
+        .info {
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: #FAFAFA;
+            }
+    
+            p {
+                font-size: 1.0rem;
+                color: #FAFAFA;
+            }
+    
+            .cvButton {
+                width: 100%;
+                transition: width 0.4s ease 0s;
+            }
+        }
+    
+        .bg {
+            display: none;
+        }
+    }
+}
