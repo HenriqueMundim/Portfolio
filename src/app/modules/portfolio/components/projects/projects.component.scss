@@ -1,0 +1,49 @@
+section {
+    padding: 0 50px 50px 50px;
+
+    .title {
+        font-size: 3rem;
+        color: #FAFAFA;
+    }
+
+    .cardContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        gap: 50px;
+        padding-top: 50px;
+
+        app-card {
+            flex-basis: 50%;
+            flex-grow: 1;
+            width: 100%;
+            max-width: 500px;
+        }
+    }
+
+}
+
+@media (max-width: 1150px) {
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        gap: 100px;
+
+        app-card {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    section {
+        .title {
+            font-size: 2rem;
+        }
+    }
+}
