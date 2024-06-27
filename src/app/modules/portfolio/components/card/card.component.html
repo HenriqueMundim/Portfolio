@@ -1,10 +1,10 @@
-<div class="cardContainer">
+<div class="card">
     
     <img src="{{cardInfo()?.url}}" alt="">
     <div class="infoCard">
         <h3 class="titleCard">{{cardInfo()?.title}}</h3>
         <p class="description">{{cardInfo()?.description}}</p>
-        <p>Stack</p>
+        <p class="stack">Stack</p>
         <ul class="stackList">
             @for (stack of cardInfo()?.stack; track stack) {
                 <li>

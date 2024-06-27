@@ -19,12 +19,6 @@ main {
 
 @media (max-width: 750px) {
     main {
-        padding-top: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
         app-curriculum {
             padding: 80px 40px;
         }
