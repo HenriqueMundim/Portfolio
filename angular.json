@@ -31,7 +31,8 @@
                 "input": "public"
               },
               "./src/assets/icons",
-              "./src/assets/images"
+              "./src/assets/images",
+              "./src/assets/backend"
             ],
             "styles": [
               "src/styles.scss"
@@ -92,7 +93,8 @@
                 "input": "public"
               },
               "./src/assets/icons",
-              "./src/assets/images"
+              "./src/assets/images",
+              "./src/assets/backend"
             ],
             "styles": [
               "src/styles.scss"

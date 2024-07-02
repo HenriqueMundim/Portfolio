@@ -1,0 +1,24 @@
+<div>
+    <h3>Back-end</h3>
+    <c-carousel 
+        [animate]="isAnimated"
+        [touch]="isTouched"
+    >
+        <c-carousel-inner>
+            @for (item of backendItem(); track item) {
+                <c-carousel-item 
+                    style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    ">
+                        <h2>{{item.name}}</h2>
+                        <img [src]="item.src" alt="" srcset="">
+                </c-carousel-item>
+            }
+        </c-carousel-inner>
+        <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+        <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+    </c-carousel>
+</div>
