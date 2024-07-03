@@ -1,6 +1,6 @@
-import { Component, signal } from '@angular/core';
-import { IcarouselItem } from '../../../../interface/IcarouselItem.interface';
+import { Component, input, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Itechnologies } from 'app/interface/IcarouselItem.interface';
 
 @Component({
   selector: 'app-tech-slider',
@@ -14,22 +14,5 @@ export class TechSliderComponent {
   public isAnimated = true;
   public isTouched = true;
 
-  public backendItem = signal<Array<IcarouselItem>>([
-    {
-      src: '../../../../../assets/backend/java.svg',
-      name: 'Java'
-    },
-    {
-      src: '../../../../../assets/backend/node.svg',
-      name: 'Node'
-    },
-    {
-      src: '../../../../../assets/backend/postgresql.svg',
-      name: 'PostgreSQL'
-    },
-    {
-      src: '../../../../../assets/backend/mysql.svg',
-      name: 'MySQL'
-    }
-  ])
+  public technologies = input<Array<Itechnologies>>([])
 }

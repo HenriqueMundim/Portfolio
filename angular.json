@@ -45,6 +45,16 @@
                 "glob": "**/*",
                 "input": "src/assets/backend",
                 "output": "/assets/backend"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/frontend",
+                "output": "/assets/frontend"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/framework",
+                "output": "/assets/framework"
               }
             ],
             "styles": [

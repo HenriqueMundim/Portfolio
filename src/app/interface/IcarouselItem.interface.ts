@@ -1,4 +1,4 @@
-export interface IcarouselItem {
+export interface Itechnologies {
     src: string;
     name: string;
 }
