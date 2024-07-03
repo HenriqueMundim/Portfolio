@@ -28,16 +28,32 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "/"
               },
-              "./src/assets/icons",
-              "./src/assets/images",
-              "./src/assets/backend"
+              {
+                "glob": "**/*",
+                "input": "src/assets/icons",
+                "output": "/assets/icons"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/images",
+                "output": "/assets/images"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/backend",
+                "output": "/assets/backend"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/scss/bootstrap.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,11 +106,24 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "/"
               },
-              "./src/assets/icons",
-              "./src/assets/images",
-              "./src/assets/backend"
+              {
+                "glob": "**/*",
+                "input": "src/assets/icons",
+                "output": "/assets/icons"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/images",
+                "output": "/assets/images"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/backend",
+                "output": "/assets/backend"
+              }
             ],
             "styles": [
               "src/styles.scss"

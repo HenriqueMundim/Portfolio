@@ -1,24 +1,15 @@
-<div>
-    <h3>Back-end</h3>
-    <c-carousel 
-        [animate]="isAnimated"
-        [touch]="isTouched"
-    >
-        <c-carousel-inner>
-            @for (item of backendItem(); track item) {
-                <c-carousel-item 
-                    style="
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                    ">
-                        <h2>{{item.name}}</h2>
-                        <img [src]="item.src" alt="" srcset="">
-                </c-carousel-item>
-            }
-        </c-carousel-inner>
-        <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
-        <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
-    </c-carousel>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    @for (item of backendItem(); track $index) {
+      @if ($index == 0) {
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img [src]="item.src" [alt]="item.name">
+        </div>
+      } @else {
+        <div class="carousel-item" data-bs-interval="5000">
+          <img [src]="item.src" [alt]="item.name">
+        </div>
+      }
+    }
+  </div>
 </div>
