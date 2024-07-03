@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 1rem;
 
-    width: 500px;
+    max-width: 500px;
 
     text-align: center;
     
@@ -50,14 +50,13 @@
 
         .stack {
             color: #FAFAFA;
-
             font-size: 1.5rem;
         }
 
         .stackList {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
             flex-wrap: wrap;
             gap: 0.5rem;
 
@@ -67,6 +66,10 @@
                 padding: 0.5rem;
                 border-radius: 8px;
                 background: linear-gradient(#020024, #200838, #502677);
+
+                p {
+                    margin-top: 10px;
+                }
             }
         }
     }
@@ -87,6 +90,8 @@
 @media (max-width: 750px) {
     .card {
         .infoCard {
+
+            padding: 1rem 0.5rem;
             .description {
                 font-size: 1rem;
             }
