@@ -1,0 +1,17 @@
+<section class="technologies">
+    <div class="introContainer">
+        <div class="intro">
+            <h2>Technologies</h2>
+            <p>I've worked with a range of technologies in<br> the web development market.</p>
+        </div>
+        <div class="bg">
+            <img src="https://gifdb.com/images/high/scrolling-up-green-system-coding-nxt2vg8bl6e4wbo1.gif" alt="backgraon code gif">
+        </div>
+    </div>
+    @for (item of technologies(); track $index) {
+        <div class="tech">
+            <h3 class="techTitle">{{item.stack}}</h3>
+            <app-tech-slider [technologies]="item.technologies"/>
+        </div>
+    }
+</section>
