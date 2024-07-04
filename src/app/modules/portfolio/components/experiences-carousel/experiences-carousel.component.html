@@ -1,1 +1,8 @@
-<p>experiences-carousel works!</p>
+<div class="keen-slider" #sliderRef>
+  @for (item of experiences(); track $index) {
+    <div class="keen-slider__slide card">
+      <h4>{{item.year}}</h4>
+      <p>{{item.description}}</p>
+    </div>
+  }
+</div>
