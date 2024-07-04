@@ -24,7 +24,7 @@
         border-radius: 8px 8px 0 0;
     }
 
-    .infoCard {
+    .info-card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -34,7 +34,7 @@
 
         
 
-        .titleCard {
+        .title-card {
             color: #FAFAFA;
 
             font-size: 1.5rem;
@@ -53,7 +53,7 @@
             font-size: 1.5rem;
         }
 
-        .stackList {
+        .stack-list {
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -89,7 +89,7 @@
 
 @media (max-width: 750px) {
     .card {
-        .infoCard {
+        .info-card {
 
             padding: 1rem 0.5rem;
             .description {

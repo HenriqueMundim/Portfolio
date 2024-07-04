@@ -1,4 +1,4 @@
-.curriculumContainer {
+.curriculum-container {
     overflow: hidden;
     .info {
         display: flex;
@@ -18,7 +18,7 @@
             color: #FAFAFA;
         }
 
-        .cvButton {
+        .cv-button {
             width: 200px;
             padding: 20px;
 
@@ -51,7 +51,7 @@
 
 @media (max-width: 750px) {
 
-    .curriculumContainer {
+    .curriculum-container {
         .info {
             display: flex;
             flex-direction: column;
@@ -69,7 +69,7 @@
                 color: #FAFAFA;
             }
     
-            .cvButton {
+            .cv-button {
                 width: 100%;
                 transition: width 0.4s ease 0s;
             }
@@ -82,7 +82,7 @@
 }
 
 @media (max-width: 550px) {
-    .curriculumContainer {
+    .curriculum-container {
         .info {
             h2 {
                 font-size: 1.5rem;
@@ -95,7 +95,7 @@
                 color: #FAFAFA;
             }
     
-            .cvButton {
+            .cv-button {
                 width: 100%;
                 transition: width 0.4s ease 0s;
             }
