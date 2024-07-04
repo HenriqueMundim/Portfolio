@@ -13,28 +13,26 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
   public cardInfo = signal<Array<IcardInfo>>([
     {
-      url: 'https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/pass/Monkey-Selfie.jpg',
-      title: 'Monkey Project',
-      description: 'Work as a Full stack monkey dev, using technologies like java, angular, typescript and springboot, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum aliquam provident nisi animi. Voluptate commodi consequatur enim, fugit excepturi, reprehenderit, neque similique est reiciendis repudiandae dolorem minus vero quisquam!, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum aliquam provident nisi animi. Voluptate commodi consequatur enim, fugit excepturi, reprehenderit, neque similique est reiciendis repudiandae dolorem minus vero quisquam!',
+      url: '../../../../../assets/images/orange.png',
+      title: 'Orange App',
+      description: 'The project is a platform for displaying portfolios. We use technologies such as Node and Express, and some DDD and Solid principles.',
       stack: [
         {
-          name: 'Java'
+          name: 'NodeJs'
         },
         {
           name: 'Typescript'
         },
         {
-          name: 'Angular'
-        },
-        {
-          name: 'Springboot'
+          name: 'Express'
         }
-      ]
+      ],
+      link: 'https://github.com/Laranja-Mecanica/orange-portifolio-api'
     },
     {
-      url: 'https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/pass/Monkey-Selfie.jpg',
-      title: 'Monkey Project',
-      description: 'Work as a Full stack monkey dev, using technologies like java, angular, typescript and springboot, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum aliquam provident nisi animi. Voluptate commodi consequatur enim, fugit excepturi, reprehenderit, neque similique est reiciendis repudiandae dolorem minus vero quisquam!, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum aliquam provident nisi animi. Voluptate commodi consequatur enim, fugit excepturi, reprehenderit, neque similique est reiciendis repudiandae dolorem minus vero quisquam!',
+      url: '../../../../../assets/images/fcamara.jpg',
+      title: 'FCamara',
+      description: 'Full Stack developer in Fcamara, i developed projects for clients using technologies like Java, Typescript, Angular and Spring boot.',
       stack: [
         {
           name: 'Java'
@@ -46,28 +44,10 @@ export class ProjectsComponent {
           name: 'Angular'
         },
         {
-          name: 'Springboot'
+          name: 'Spring Boot'
         }
-      ]
-    },
-    {
-      url: 'https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/pass/Monkey-Selfie.jpg',
-      title: 'Monkey Project',
-      description: 'Work as a Full stack monkey dev, using technologies like java, angular, typescript and springboot, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum aliquam provident nisi animi. Voluptate commodi consequatur enim, fugit excepturi, reprehenderit, neque similique est reiciendis repudiandae dolorem minus vero quisquam!, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum aliquam provident nisi animi. Voluptate commodi consequatur enim, fugit excepturi, reprehenderit, neque similique est reiciendis repudiandae dolorem minus vero quisquam!',
-      stack: [
-        {
-          name: 'Java'
-        },
-        {
-          name: 'Typescript'
-        },
-        {
-          name: 'Angular'
-        },
-        {
-          name: 'Springboot'
-        }
-      ]
+      ],
+      link: 'https://fcamara.com/'
     }
   ])
 }
