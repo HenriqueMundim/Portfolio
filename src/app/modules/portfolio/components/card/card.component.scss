@@ -24,7 +24,7 @@
         border-radius: 8px 8px 0 0;
     }
 
-    .infoCard {
+    .info-card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -34,8 +34,8 @@
 
         
 
-        .titleCard {
-            color: #FAFAFA;
+        .title-card {
+            color: var(--primary-font);
 
             font-size: 1.5rem;
         }
@@ -43,17 +43,17 @@
         .description {
             width: 100%;
 
-            color: #FAFAFA;
+            color: var(--primary-font);
             text-align: justify;
             font-size: 1.25rem;
         }
 
         .stack {
-            color: #FAFAFA;
+            color: var(--primary-font);
             font-size: 1.5rem;
         }
 
-        .stackList {
+        .stack-list {
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -62,10 +62,10 @@
 
             li {
                 display: inline-block;
-                color: #FAFAFA;
+                color: var(--primary-font);
                 padding: 0.5rem;
                 border-radius: 8px;
-                background: linear-gradient(#020024, #200838, #502677);
+                background: linear-gradient(var(--primary-gradient));
 
                 p {
                     margin-top: 10px;
@@ -89,7 +89,7 @@
 
 @media (max-width: 750px) {
     .card {
-        .infoCard {
+        .info-card {
 
             padding: 1rem 0.5rem;
             .description {

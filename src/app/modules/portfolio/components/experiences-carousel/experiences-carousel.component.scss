@@ -7,8 +7,8 @@
 
         border-radius: 8px;
 
-        background-color: #120d24;
-        color: #FAFAFA;
+        background-color: var(--primary-bg);
+        color: var(--primary-font);
         transition: border 1s;
 
         p {
@@ -16,8 +16,10 @@
         }
     }
 
-    .card:hover {
-        border: 1px solid white;
+    .card:hover, .card:focus {
+        border: 1px solid var(--primary-font);
     }
+
+
 }
                 
