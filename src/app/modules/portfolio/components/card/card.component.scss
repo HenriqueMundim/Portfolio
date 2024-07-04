@@ -6,7 +6,7 @@
     gap: 1rem;
 
     max-width: 500px;
-
+    padding-bottom: 1rem;
     text-align: center;
     
 
@@ -29,7 +29,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 1rem 50px;
+        padding: 1rem;
         gap: 1rem;
 
         
@@ -55,15 +55,14 @@
 
         .stack-list {
             display: flex;
-            align-items: center;
-            justify-content: space-around;
             flex-wrap: wrap;
             gap: 0.5rem;
+            padding: 0;
 
             li {
                 display: inline-block;
                 color: var(--primary-font);
-                padding: 0.25rem 1rem;
+                padding: 0.5rem;
                 border-radius: 8px;
                 background: linear-gradient(var(--primary-gradient));
 
@@ -108,6 +107,20 @@
             padding: 1rem 0.5rem;
             .description {
                 font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        .info-card {
+            .stack-list {
+                flex-direction: column;
+
+                li {
+                    width: 100%;
+                }
             }
         }
     }
