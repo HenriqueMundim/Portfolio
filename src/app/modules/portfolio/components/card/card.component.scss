@@ -35,7 +35,7 @@
         
 
         .title-card {
-            color: #FAFAFA;
+            color: var(--primary-font);
 
             font-size: 1.5rem;
         }
@@ -43,13 +43,13 @@
         .description {
             width: 100%;
 
-            color: #FAFAFA;
+            color: var(--primary-font);
             text-align: justify;
             font-size: 1.25rem;
         }
 
         .stack {
-            color: #FAFAFA;
+            color: var(--primary-font);
             font-size: 1.5rem;
         }
 
@@ -62,10 +62,10 @@
 
             li {
                 display: inline-block;
-                color: #FAFAFA;
+                color: var(--primary-font);
                 padding: 0.5rem;
                 border-radius: 8px;
-                background: linear-gradient(#020024, #200838, #502677);
+                background: linear-gradient(var(--primary-gradient));
 
                 p {
                     margin-top: 10px;
