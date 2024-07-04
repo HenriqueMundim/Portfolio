@@ -1,0 +1,108 @@
+.curriculum-container {
+    overflow: hidden;
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 0.5rem;
+            color: var(--primary-font);
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: var(--primary-font);
+        }
+
+        .cv-button {
+            width: 200px;
+            padding: 20px;
+
+            border: none;
+            border-radius: 8px;
+
+            background: linear-gradient(var(--primary-gradient));
+            color: var(--primary-font);
+
+            font-size: 1rem;
+
+            transition: width 0.4s ease 0s;
+        }
+
+    }
+
+    .bg {
+        z-index: 1;
+        position: relative;
+        margin-top: -300px;
+        margin-left: 550px;
+        
+        img {
+            filter: opacity(15%), ;
+            max-width: 500px;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+
+    .curriculum-container {
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+    
+            h2 {
+                font-size: 2.0rem;
+                font-weight: 700;
+                color: #FAFAFA;
+            }
+    
+            p {
+                font-size: 1.25rem;
+                color: #FAFAFA;
+            }
+    
+            .cv-button {
+                width: 100%;
+                transition: width 0.4s ease 0s;
+            }
+        }
+    
+        .bg {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .curriculum-container {
+        .info {
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--primary-font);
+            }
+    
+            p {
+                font-size: 1.0rem;
+                color: var(--primary-font);
+            }
+    
+            .cv-button {
+                width: 100%;
+                transition: width 0.4s ease 0s;
+            }
+        }
+    
+        .bg {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.keen-slider {
+    .card {
+        width: 100%;
+        height: 150px;
+        max-width: 200px;
+        padding: 1rem;
+
+        border-radius: 8px;
+
+        background-color: var(--primary-bg);
+        color: var(--primary-font);
+        transition: border 1s;
+
+        p {
+            font-weight: 200;
+        }
+    }
+
+    .card:hover, .card:focus {
+        border: 1px solid var(--primary-font);
+    }
+
+
+}
+                

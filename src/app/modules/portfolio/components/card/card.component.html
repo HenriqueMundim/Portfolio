@@ -1,0 +1,17 @@
+<div class="card">
+    
+    <img src="{{cardInfo()?.url}}" alt="">
+    <div class="info-card">
+        <h3 class="title-card">{{cardInfo()?.title}}</h3>
+        <p class="description">{{cardInfo()?.description}}</p>
+        <p class="stack">Stack</p>
+        <ul class="stack-list">
+            @for (stack of cardInfo()?.stack; track stack) {
+                <li>
+                    <p>{{stack.name}}</p>
+                </li>
+            }
+        </ul>
+        <a class="visit-link" [href]="cardInfo()?.link" target="_blank"><button class="visit-button">Visit</button></a>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+main {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    app-curriculum {
+        max-width: 1400px;
+        width: 100%;
+        padding: 150px 40px;
+    }
+
+    app-projects {
+        max-width: 1400px;
+        width: 100%;
+    }
+
+    app-technologies {
+        max-width: 1400px;
+        width: 100%;
+    }
+
+    app-about {
+        max-width: 1400px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        app-curriculum {
+            padding: 80px 40px;
+        }
+    }
+}
+

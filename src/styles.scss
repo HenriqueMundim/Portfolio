@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --primary-bg: #120d24;
+    --primary-font: #FAFAFA;
+    --primary-gradient: #020024, #200838, #502677;
+    --primary-button: #200838;
+}
+
+body {
+    background-image: url('./assets/images/background.svg');
+    background-position: center;
+    background-size: cover;
+}
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

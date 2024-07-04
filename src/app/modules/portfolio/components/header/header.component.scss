@@ -1,0 +1,107 @@
+header {
+    z-index: 9999999;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+    background-color: rgba($color: #120d24, $alpha: 0.8);
+    position: fixed;
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        .logo{
+            width: 1.5rem;
+            height: 1.5rem;
+            filter: invert(100%);
+        }
+
+        span {
+            color: var(--primary-font);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .menu {
+        .menu-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            li {
+                .menu-item {
+                    color: var(--primary-font);
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+            }
+            
+        }
+    }
+
+    .social-media-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        a img {
+            width: 1.5rem;
+            height: 1.5rem;
+            filter: invert(100%);
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(2, 60px);
+        grid-template-columns: repeat(6, 1fr);
+
+        background-color: rgba($color: #120d24, $alpha: 0.8);
+        position: fixed;
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+
+            width: 100%;
+            
+            grid-area: 1 / 1 / 1 / 4;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            grid-area: 2 / 1 / 2 / -1;
+
+            .menu-list {
+                li {
+                    .menu-item {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+
+        .social-media-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            grid-area: 1 / 4 / 1 / -1;
+        }
+    }
+}

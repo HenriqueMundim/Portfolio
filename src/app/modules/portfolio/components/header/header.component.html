@@ -1,0 +1,20 @@
+<header>
+    <div class="logo-container">
+        <img class="logo" [src]="logoHeader" alt="" srcset="">
+        <span>Henrique Matos</span>
+    </div>
+    <nav class="menu">
+        <ul class="menu-list">
+            <li><a class="menu-item" href="">Projects</a></li>
+            <li><a class="menu-item" href="">Tech</a></li>
+            <li><a class="menu-item" href="">About</a></li>
+            <li><a class="menu-item" href="">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="social-media-container">
+        @for(icon of icons(); track icon.name) {
+            <a href="{{icon.href}}" target="_blank"><img src="{{icon.src}}" alt="{{icon.name}}"></a>
+        }
+    </div>
+</header>
+

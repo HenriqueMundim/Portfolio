@@ -1,0 +1,17 @@
+<footer>
+    <h3>Contact me, let's work together!</h3>
+    <hr>
+    <div class="container">
+        @for (item of contactInfo(); track $index) {
+            <div class="contact-container">
+                <div class="contact-method">
+                    <img [src]="item.src" [style.filter]="item.contactMethod === 'Email' ? 'invert(100%)' : 'none'"  alt="Contact method icon">
+                    <h4>{{item.contactMethod}}</h4>
+                </div>
+                <a [href]="item.link" target="_blank">
+                    <p>{{item.contactInfo}}</p>
+                </a>
+            </div>
+        }
+    </div>
+</footer>

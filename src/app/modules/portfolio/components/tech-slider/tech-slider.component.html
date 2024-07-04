@@ -1,0 +1,21 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    @for (item of technologies(); track $index) {
+      @if ($index == 0) {
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img [src]="item.src" [alt]="item.name">
+          <div class="carousel-caption d-md-block">
+            <h4>{{item.name}}</h4>
+          </div>
+        </div>
+      } @else {
+        <div class="carousel-item" data-bs-interval="3000">
+          <img [src]="item.src" [alt]="item.name">
+          <div class="carousel-caption d-md-block">
+            <h4>{{item.name}}</h4>
+          </div>
+        </div>
+      }
+    }
+  </div>
+</div>
