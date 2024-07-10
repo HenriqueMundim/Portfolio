@@ -63,12 +63,13 @@
     .technologies {
 
         padding: 100px 20px; 
-        gap: 1rem;
+        gap: 2rem;
 
         .intro-container {
-
+            
             .intro {
-
+                gap: 1rem;
+                
                 h2 {
                     font-size: 2rem;
                     letter-spacing: 0.25rem;
@@ -88,7 +89,4 @@
         }
     }
 
-    .tech {
-        padding-left: 2.5rem;
-    }
 }
