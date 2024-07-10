@@ -31,6 +31,21 @@
         border: 1px solid var(--primary-font);
     }
 
+    .arrow {
+        position: absolute;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        filter: invert(100%);
+    }
+
+    .arrow-left {
+        left: 5px;
+    }
+
+    .arrow-right {
+        right: 5px;
+    }
 
 }
                 
