@@ -14,6 +14,7 @@ export class TechSliderComponent {
   @ViewChild("sliderRef") sliderRef!: ElementRef<HTMLElement>
 
   public technologies = input<Array<Itechnologies>>([])
+
   slider: KeenSliderInstance | null = null
 
   ngAfterViewInit() {
