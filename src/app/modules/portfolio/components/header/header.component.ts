@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, ElementRef, signal, ViewChild } from '@angular/core';
 import { Iicon } from '../../../../interface/iicon.interface';
 import { CommonModule } from '@angular/common';
 
@@ -30,4 +30,8 @@ export class HeaderComponent {
       src: '../../../../../assets/icons/emailLogo.svg'
     }
   ])
+
+  public smoothScrollToSection(id: string) {
+    document.getElementById(id)?.scrollIntoView({behavior: 'smooth'})
+  }
 }

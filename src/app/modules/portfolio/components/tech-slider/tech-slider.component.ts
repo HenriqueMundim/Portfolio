@@ -21,7 +21,7 @@ export class TechSliderComponent {
       loop: true,
       mode: 'free-snap',
       slides: {
-        perView: 6,
+        perView: 4,
         spacing: 10,
       },
       breakpoints: {
