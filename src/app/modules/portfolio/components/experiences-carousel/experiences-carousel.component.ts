@@ -36,9 +36,10 @@ export class ExperiencesCarouselComponent {
       },
     ])
 
+    slider: KeenSliderInstance | null = null
 
     ngAfterViewInit() {
-      this.sliderRef = new KeenSlider(this.sliderRef.nativeElement, {
+      this.slider = new KeenSlider(this.sliderRef.nativeElement, {
         loop: true,
         mode: 'free-snap',
         slides: {

@@ -12,7 +12,7 @@ import { FooterComponent } from '@components/footer/footer.component';
   `
     <app-header></app-header>
     <app-main></app-main>
-    <app-footer></app-footer>
+    <app-footer id="footer"></app-footer>
   `
 })
 export class AppComponent {

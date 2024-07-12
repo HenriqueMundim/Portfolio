@@ -36,12 +36,28 @@ header {
             gap: 1rem;
 
             li {
+                cursor: pointer;
+                
                 .menu-item {
                     color: var(--primary-font);
                     text-decoration: none;
                     font-weight: 700;
                     font-size: 1.5rem;
                 }
+            }
+
+            li::after {
+                display: block;
+                margin-top: 1px;
+                content: '';
+                width: 0;
+                height: 3px;
+                background: var(--primary-font);
+                transition: width 1s;
+            }
+
+            li:hover::after {
+                width: 100%;
             }
             
         }
@@ -85,7 +101,7 @@ header {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            grid-area: 2 / 1 / 2 / -1;
+            grid-area: 2 / 2 / 2 / -1;
 
             .menu-list {
                 li {

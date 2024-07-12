@@ -15,12 +15,14 @@ export class TechSliderComponent {
 
   public technologies = input<Array<Itechnologies>>([])
 
+  slider: KeenSliderInstance | null = null
+
   ngAfterViewInit() {
-    this.sliderRef = new KeenSlider(this.sliderRef.nativeElement, {
+    this.slider = new KeenSlider(this.sliderRef.nativeElement, {
       loop: true,
       mode: 'free-snap',
       slides: {
-        perView: 6,
+        perView: 4,
         spacing: 10,
       },
       breakpoints: {
